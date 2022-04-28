@@ -6,10 +6,6 @@
   text-decoration: none;
 }
 
-html {
-  scroll-behavior: smooth;
-}
-
 ::webkit-scrollbar {
   display: none;
 }
@@ -49,4 +45,5 @@ html {
   background-color: var(--glass);
   overflow: hidden;
   grid-template-columns: 11rem auto 20rem;
+  gap: 10px;
 }
