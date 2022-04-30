@@ -11,6 +11,10 @@ th {
   border: none !important;
 }
 
+.table-container > h3 {
+  margin-bottom: 1.5rem;
+}
+
 .table-container:first-child {
   border-radius: 0.7rem !important;
 }
@@ -22,4 +26,25 @@ th {
 
 .details {
   color: #00b5ff !important;
+}
+
+/* ------------------ MQ LAPTOPS ------------------ */
+
+@media screen and (max-width: 1200px) {
+  .table-container {
+    width: 170%;
+    margin-top: 3rem;
+  }
+}
+
+/* ------------------ MQ MOBILE ------------------ */
+
+@media screen and (max-width: 768px) {
+  .table-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 18rem;
+  }
 }

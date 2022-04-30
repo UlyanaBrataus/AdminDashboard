@@ -22,28 +22,53 @@
   --smboxShadow: -79px 51px 60px rgba(0, 0, 0, 0.08);
   --active-item: #f799a354;
 }
-
-.container__app {
-  font-family: "Inter", sans-serif;
+html {
   background: linear-gradient(
     106.37deg,
     #ffe1bc 29.63%,
     #ffcfd1 51.55%,
     #f3c6f1 90.85%
   );
-  height: 100vh;
+}
+
+.container__app {
+  font-family: "Inter", sans-serif;
+  color: var(--black);
   display: flex;
+  padding: 2.5rem 2.5rem;
+  height: 100%;
   justify-content: center;
   align-items: center;
 }
 
 .container__glass {
   display: grid;
-  max-height: 95%;
-  width: 95%;
+  grid-template-columns: 11rem auto 20rem;
+  gap: 16px;
+  max-height: 97%;
+  width: 97%;
   border-radius: 2rem;
   background-color: var(--glass);
   overflow: hidden;
-  grid-template-columns: 11rem auto 20rem;
-  gap: 10px;
+}
+
+/* -----------------  MEDIA QUERIES LAPTOPS --------------  */
+
+@media screen and (max-width: 1200px) {
+  .container__glass {
+    grid-template-columns: 10% 50% auto;
+    overflow-y: scroll;
+  }
+}
+
+/* ------------------ MQ MOBILE ------------------ */
+
+@media screen and (max-width: 768px) {
+  .container__glass {
+    grid-template-columns: 1fr;
+  }
+
+  .container__glass::-webkit-scrollbar {
+    display: none;
+  }
 }

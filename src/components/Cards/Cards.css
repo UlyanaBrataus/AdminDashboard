@@ -6,3 +6,23 @@
 .cards {
   width: 100%;
 }
+
+/* ------------------ MQ LAPTOPS ------------------ */
+
+@media screen and (max-width: 1200px) {
+  .cards-container {
+    flex-direction: column;
+  }
+
+  .cards {
+    height: 9rem;
+  }
+}
+
+/* ------------------ MQ MOBILE ------------------ */
+
+@media screen and (max-width: 768px) {
+  .cards-container {
+    width: 90%;
+  }
+}

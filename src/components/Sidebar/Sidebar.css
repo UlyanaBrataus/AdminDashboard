@@ -65,3 +65,59 @@
   bottom: 2.3rem;
   width: 100%;
 }
+
+.bars {
+  display: none;
+}
+
+/* ------------------ MQ LAPTOPS ------------------ */
+
+@media screen and (max-width: 1200px) {
+  .menu__item > span {
+    display: none;
+  }
+
+  .sidebar__menu {
+    left: 0;
+  }
+
+  .sidebar__logo {
+    display: none;
+  }
+}
+
+/* ------------------ MQ MOBILE ------------------ */
+
+@media screen and (max-width: 768px) {
+  .sidebar {
+    position: fixed;
+    z-index: 9;
+    background: #ffe0e0;
+    width: 55%;
+    padding-right: 1rem;
+    height: 100%;
+  }
+
+  .menu__item > span {
+    display: block;
+  }
+
+  .sidebar__logo {
+    display: flex;
+  }
+
+  .sidebar__menu .menu__item:last-child {
+    position: relative;
+    margin-top: 1.5rem;
+  }
+
+  .bars {
+    display: flex;
+    position: fixed;
+    top: 2rem;
+    z-index: 9;
+    background: #ffe0e0;
+    padding: 10px;
+    border-radius: 10px;
+  }
+}
