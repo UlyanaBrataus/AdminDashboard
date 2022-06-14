@@ -7,7 +7,7 @@ import "./Sidebar.css";
 
 const Sidebar = () => {
   const [selected, setSelected] = useState(0);
-  const [expanded, setExpanded] = useState(true);
+  const [expanded, setExpanded] = useState(false);
 
   const sidebarVariants = {
     true: { left: "0" },

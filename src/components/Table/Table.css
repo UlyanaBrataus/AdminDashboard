@@ -45,6 +45,6 @@ th {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 18rem;
+    max-width: 18rem;
   }
 }
